@@ -1,0 +1,4 @@
+<?php
+namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+class QueueTicket extends Model { protected $fillable=['service_location_id','service_category_id','service_counter_id','user_id','queue_date','daily_number','display_number','lookup_token','customer_name','customer_phone','status','called_at','serving_at','completed_at']; protected function casts(): array{return ['queue_date'=>'date','called_at'=>'datetime','serving_at'=>'datetime','completed_at'=>'datetime'];} public function location(){return $this->belongsTo(ServiceLocation::class,'service_location_id');} public function category(){return $this->belongsTo(ServiceCategory::class,'service_category_id');} public function counter(){return $this->belongsTo(ServiceCounter::class,'service_counter_id');} public function audits(){return $this->hasMany(QueueAudit::class);} }
