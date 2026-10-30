@@ -2,6 +2,19 @@
 
 Standalone Laravel queue app: service locations/categories/counters, daily queue numbering, public queue display, ticket lookup, protected staff controls, and reports.
 
+---
+
+## Screenshots
+
+| Tampilan | Preview |
+|---|---|
+| **Kios Pendaftaran Antrean Mandiri**<br>Formulir registrasi antrean publik terintegrasi per kategori layanan (KTP-el, NIB, Pajak Daerah) dan akses display monitor | ![Kios Pendaftaran Antrean Mandiri](docs/screenshots/01-kiosk-registration.png) |
+| **Monitor Display Antrean (Digital Signage)**<br>Papan informasi pemanggilan nomor antrean publik per loket secara real-time dan jumlah antrean menunggu | ![Monitor Display Antrean](docs/screenshots/02-digital-signage-display.png) |
+| **E-Ticket Nomor Antrean Pelanggan**<br>Tampilan tiket digital mobile dengan nomor antrean unik, identitas lokasi layanan, tanggal antrean, dan status terkini | ![E-Ticket Nomor Antrean Pelanggan](docs/screenshots/03-customer-eticket.png) |
+| **Dashboard Operasional Petugas Loket**<br>Konsol pemanggilan nomor antrean berikutnya (Call Next), kontrol aksi loket (Recall, Start, Complete, Cancel), dan tabel antrean aktif | ![Dashboard Operasional Petugas Loket](docs/screenshots/04-staff-operations-dashboard.png) |
+
+---
+
 ## Local setup (Windows PowerShell)
 
 ```powershell
