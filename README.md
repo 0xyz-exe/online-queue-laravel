@@ -50,3 +50,15 @@ npm audit --omit=dev
 Full `npm audit` reports three moderate advisories in the Tailwind 3/PostCSS development toolchain (`postcss-selector-parser` via `postcss-nested`); npm's suggested remediation upgrades Tailwind to v4 (breaking). Production dependency audit is clean. Reassess/migrate the dev toolchain before changing Tailwind; do not apply `npm audit fix --force` blindly.
 
 For production configure HTTPS, a transactional relational DB, backups, rate limiting appropriate to traffic, monitoring, data-retention rules, and least-privilege staff accounts. Do not commit `.env`, customer records, `vendor`, `node_modules`, or build output. MIT license.
+
+
+## Screenshots
+
+### Dashboard Overview
+![Dashboard](docs/screenshots/01_dashboard.png)
+
+### Login Overview
+![Login](docs/screenshots/02_login.png)
+
+### Reports Overview
+![Reports](docs/screenshots/03_reports.png)
